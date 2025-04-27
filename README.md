@@ -1,45 +1,45 @@
-# Extração de Texto com Mistral OCR
+# Text Extraction with Mistral OCR
 
-Este documento demonstra como utilizar a API Mistral OCR para extrair texto de faturas em PDF e notas manuscritas.
+This document shows how to use the Mistral OCR API to extract text from PDF invoices and handwritten notes.
 
-## Requisitos
+## Requirements
 
 - Python 3.6+
-- Biblioteca `mistralai`
-- Chave de API Mistral
+- mistralai li
+- Mistral API key
 
-## Configuração
+## Setup
 
-1. Instale as dependências necessárias:
+1. Install the required dependencies:
    ```
    pip install mistralai
    ```
 
-2. Configure sua chave de API Mistral:
-   - Crie um arquivo `.env` baseado no `.env-example`
-   - Adicione sua chave de API Mistral ao arquivo
+2. Configure your Mistral API key:
+   - Create a `.env` file based on the `.env-example` 
+   - Add your Mistral API key to the file
 
-## Scripts Disponíveis
+## Available Scripts
 
-### 1. Extração de Texto de Faturas (nf_ingestion.py)
+### 1. Invoice Text Extraction (nf_ingestion.py)
 
-Este script demonstra como extrair informações específicas de uma fatura em PDF:
-- Extrai o texto completo usando OCR
-- Identifica o número da fatura e valor total usando expressões regulares
-- Inclui código comentado para mascarar informações sensíveis (CPF, nome, endereço)
+This script demonstrates how to extract specific information from a PDF invoice:
+- Extracts the full text using OCR
+- Identifies the invoice number and total amount using regular expressions
+- Includes commented code to mask sensitive information (CPF, name, address)
 
-Uso: 
+Usage: 
 ```
 python nf_ingestion.py
 ```
 
-### 2. Extração de Texto de Notas Manuscritas (handwritten_ingestion.py)
+### 2. Handwritten Notes Text Extraction (handwritten_ingestion.py)
 
-Este script demonstra como extrair texto de uma nota manuscrita:
-- Extrai o texto completo usando OCR
-- Inclui código comentado para mascarar informações sensíveis (CPF, nome, endereço)
+This script demonstrates how to extract text from a handwritten note:
+- Extracts the full text using OCR
+- Includes commented code to mask sensitive information (CPF, name, address)
 
-Uso: 
+Usge: 
 ```
 python handwritten_ingestion.py
 ```  
